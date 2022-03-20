@@ -21,3 +21,4 @@ while True: #참일때 반복
   m -= 1
 
 print(result)
+#
