@@ -1,0 +1,7 @@
+#2차원 리스트(행렬)을 90도 회전시키는 알고리즘 
+def list_90_degree(a):
+  row_length = len(a) # 3열
+  column)length = len(a[0]) #4행
+  result = [[0]*len(a) for _ in range(len(a[0]))]
+  #2차원 리스트 초기화
+  for i in range  
