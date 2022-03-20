@@ -1,0 +1,14 @@
+n,m = map(int,input().split())
+
+
+min_num = 0
+result_num = 0
+
+for i in range(n):
+  card = list(map(int,input().split()))
+  min_num = min(card)  #카드에서 가장 작은 수
+  result_num = max(min_num, result_num)
+
+print(result_num)
+    
+    
