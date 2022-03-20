@@ -1,0 +1,23 @@
+# N:배열의크기 , M:숫자더하는 횟수, K: 중복가능횟수
+n, m, k = map(int,input().split())
+#data에 5개의 자연수 입력함!!
+data = list(map(int,input().split()))
+
+data.sort() #입력받은 수 정렬!!
+
+max_num = data[n-1] #가장 큰 수
+second_num = data[n-2] #두번째로 큰 수
+result = 0 #최대합 출력해주는 결과값
+
+while True: #참일때 반복
+  for i in range(k):
+    if m == 0:
+        break
+    result += max_num
+    m -= 1
+  if m == 0:
+    break
+  result += second_num   
+  m -= 1
+
+print(result)
