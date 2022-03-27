@@ -1,0 +1,21 @@
+str = input() #문자열 0과 1로 이루어진것
+cnt0 = 0 
+cnt1 = 0
+if str[0] == '1':
+  cnt1 += 1 #첫번째 원소가 1일때 1cnt
+else:
+  cnt0 += 1 #첫번째 원소가 0일때 0cnt
+
+# str=0001100 , 1110010
+
+for i in range(len(str)-1):
+  if str[i] != str[i+1]: #첫번째리스트와 두번째가 다르면?
+    if str[i+1] == '1':
+      cnt1 += 1
+    else:
+      cnt0 += 1
+#print(cnt0,cnt1)
+print(min(cnt0,cnt1))      
+    
+  
+  
